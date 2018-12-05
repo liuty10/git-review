@@ -129,4 +129,5 @@ You can also use stash command multiple times and recove a specific version:
 $ git stash list
 $ git stash apply stash@{0}
 
-
+TO DO:
+add something to explain: what is "git rebase"?
