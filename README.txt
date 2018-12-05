@@ -88,5 +88,45 @@ $ git merge --no-ff -m "merge with no-ff" dev
 Check the branch history:
 $ git log --graph --pretty=online --abbrev-commit
 
+# When fixing a bug, you will create a new branch, called issue-001
+Before fix the bug, you need to save you current modification:
+
+$ git stash
+Save working directory and index state WIP on dev: f52c633 and merge
+
+Use git status to check modification, and it will be clean
+$ git status
+
+# Determine which brach you want to start to fix the bug, maybe master branch
+$ git checkout master
+
+$ git checkout -b issue-001
+
+$ vim xxx.file
+
+$ git commit -a -m "fix bug issue-001"
+
+$ git checkout master
+
+$ git merge --no-ff -m "merged bug fix 101" issue-101
+
+Now it's time to come back to dev branch and continue working:
+$ git checkout dev
+$ git status
+nothing to commit, working tree clean(It's because that we stashed the modification)
+
+$ git stash list
+stash@{0}: WIP on dev: f52c633 and merge
+
+Here are two way to recove the modifications:
+1. git stash apply && git stash drop
+2. git stash pop
+
+Now, when you check the stash list, it will be empty:
+$ git stash list
+
+You can also use stash command multiple times and recove a specific version:
+$ git stash list
+$ git stash apply stash@{0}
 
 
