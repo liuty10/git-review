@@ -79,7 +79,14 @@ modify it to be like
 Hello
 
 Save and commit again on dev branch:
-git add README.md
-git commit -m "fix conflict"
+$ git add README.md
+$ git commit -m "fix conflict"
+
+When merge a branch, you can also disable fast forward merge
+$ git merge --no-ff -m "merge with no-ff" dev
+
+Check the branch history:
+$ git log --graph --pretty=online --abbrev-commit
+
 
 
