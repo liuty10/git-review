@@ -59,7 +59,4 @@ $ git merge Tom
 
 If you no langer need the branch, just delete
 $ git branch -d Tom
-
-
-
-
+## Add some testing words
