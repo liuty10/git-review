@@ -59,4 +59,27 @@ $ git merge Tom
 
 If you no langer need the branch, just delete
 $ git branch -d Tom
-# Add some useful words
+## How to deal with confliction
+$ git merge Tom
+Auto merge failed; fix conflicts and commit the result
+
+Check conflict file
+$ git status
+README.md
+
+Check confliction in file
+
+<<<<<<<HEAD
+NIHAO
+=============
+Hello
+>>>>>>>>>>>>
+
+modify it to be like
+Hello
+
+Save and commit again on dev branch:
+git add README.md
+git commit -m "fix conflict"
+
+
