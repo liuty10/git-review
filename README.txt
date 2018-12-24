@@ -4,6 +4,9 @@
 Check modification
 $ git status
 
+Check Detailed Modifications
+$ git diff xxx.file
+
 Add modification
 $ git add xxx.file
 
