@@ -89,7 +89,10 @@ When merge a branch, you can also disable fast forward merge
 $ git merge --no-ff -m "merge with no-ff" dev
 
 Check the branch history:
-$ git log --graph --pretty=online --abbrev-commit
+$ git log --graph --pretty=oneline --abbrev-commit
+
+Show changes over time for a specific file:
+$ git log -p xxx.file
 
 # When fixing a bug, you will create a new branch, called issue-001
 Before fix the bug, you need to save you current modification:
