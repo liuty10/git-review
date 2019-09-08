@@ -14,7 +14,7 @@ Commit modification
 $ git commit -m "we made some changes"
 
 Or you can commit directly:
-$ git commit -a -a "commit directly without add step"
+$ git commit -a -m "commit directly without add step"
 
 ## git tag
 To view existing tags:
