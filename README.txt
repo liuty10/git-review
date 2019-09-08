@@ -135,6 +135,18 @@ You can also use stash command multiple times and recove a specific version:
 $ git stash list
 $ git stash apply stash@{0}
 
+当你的小伙伴从远程库clone时，默认情况下，你的小伙伴只能看到本地的master分支。不信可以用git branch命令看看：
+
+$ git branch
+* master
+
+现在，你的小伙伴要在dev分支上开发，就必须创建远程origin的dev分支到本地，于是他用这个命令创建本地dev分支：
+
+$ git checkout -b dev origin/dev
+
+现在，他就可以在dev上继续修改，然后，时不时地把dev分支push到远程：
+
+
 因此，多人协作的工作模式通常是这样：
 
     首先，可以试图用git push origin <branch-name>推送自己的修改；
