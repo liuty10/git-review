@@ -177,3 +177,11 @@ $ git checkout -b dev origin/dev
 
 TO DO:
 add something to explain: what is "git rebase"?
+
+如何建立远程dev分支：
+1. 在github上建立dev分支
+2. 在客户端建立并切换至dev分支
+3. git fetch
+4. git branch --set-upstream dev origin/dev
+5. git merge issue-1
+6. git push
