@@ -204,4 +204,14 @@ One of the more helpful options is -p or --patch, which shows the difference (th
 if you want to see some abbreviated stats for each commit, you can use the --stat option
 git log --stat
 
+how to create a git patch?
+git diff > my_custom_patch_file.patch
+Then, another user can use this patch:
+git apply patch_file.patch
+
+Or, you can:
+https://www.tutorialspoint.com/git/git_patch_operation.htm
+git format-patch -1
+Then, another user:
+git apply 0001-xxxxx.patch
 
