@@ -18,6 +18,9 @@ $ git diff xxx.file
 Add modification
 $ git add xxx.file
 
+If you would like to check the diff again:
+$ git diff --staged xxx.file
+
 Commit modification
 $ git commit -m "we made some changes"
 
