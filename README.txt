@@ -210,6 +210,15 @@ One of the more helpful options is -p or --patch, which shows the difference (th
 git log -p filename
 Show the modification history of a perticular file
 
+git diff
+Shows the changes between the working directory and the index. This shows what has been changed, but is not staged for a commit.
+
+git diff --cached
+Shows the changes between the index and the HEAD (which is the last commit on this branch). This shows what has been added to the index and staged for a commit.
+
+git diff HEAD
+Shows all the changes between the working directory and HEAD (which includes changes in the index). This shows all the changes since the last commit, whether or not they have been staged for commit or not.
+
 if you want to see some abbreviated stats for each commit, you can use the --stat option
 git log --stat
 
