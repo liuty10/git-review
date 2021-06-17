@@ -207,6 +207,9 @@ git log
 git log -p -1
 One of the more helpful options is -p or --patch, which shows the difference (the patch output) introduced in each commit. You can also limit the number of log entries displayed, such as using -2 to show only the last two entries.
 
+git log -p filename
+Show the modification history of a perticular file
+
 if you want to see some abbreviated stats for each commit, you can use the --stat option
 git log --stat
 
