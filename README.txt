@@ -146,6 +146,8 @@ You can also use stash command multiple times and recove a specific version:
 $ git stash list
 $ git stash apply stash@{0}
 
+git stash list --date=local
+
 当你的小伙伴从远程库clone时，默认情况下，你的小伙伴只能看到本地的master分支。不信可以用git branch命令看看：
 
 $ git branch
