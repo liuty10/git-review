@@ -235,3 +235,6 @@ git format-patch -1
 Then, another user:
 git apply 0001-xxxxx.patch
 
+
+git log --graph --all --decorate --simplify-by-decoration
+It will only show commits that are branch heads or tagged.
